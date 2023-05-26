@@ -1,0 +1,109 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+*.mp4
+
+# Flutter/Dart-specific files
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.xcconfig
+**/ios/Flutter/Debug.xcconfig
+**/ios/Flutter/Release.xcconfig
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/flutter_project.xcworkspace/
+**/ios/Flutter/gen_snapshot
+**/ios/Flutter/Flutter.framework/
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/flutter_tools.stamp
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/DebugProfile.entitlements
+**/ios/Flutter/Release.entitlements
+**/ios/Flutter/ReleaseProfile.entitlements
+**/ios/Flutter/Development.xcconfig
+**/ios/Flutter/Staging.xcconfig
+**/ios/Flutter/Profile.xcconfig
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/.idea
+**/android/build/
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.podspec.lock
+**/ios/Flutter/Flutter.podspec
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Dart analysis files
+**/analysis_options.{yaml,yml}
+**/.dart_tool/
+**/.idea/
+**/*.iml
+**/*.iws
+**/*.ipr
+
+# Other
+.DS_Store
+*.class
+*.lock
+*.swp
+*.thumbs.db
+*.bak
+*.cache
+*.log
+*.orig
+*.tmp
+*.patch
+*.jar
+*.war
+*.ear
+*.nupkg
