@@ -13,7 +13,7 @@ class DrawerMenu extends StatefulWidget {
 class DrawerMenuState extends State<DrawerMenu> {
   @override
   Widget build(BuildContext context) {
-    const drawerHeader = DrawerHeader(child: Text('Meniu'));
+    const drawerHeader = DrawerHeader(child: Text('Menu'));
 
     return Drawer(
       child: ListView(

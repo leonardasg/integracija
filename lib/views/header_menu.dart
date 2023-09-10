@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'home_page.dart';
+import 'package:integration_app/controllers/auth/login.dart';
 
 class HeaderMenu extends StatefulWidget implements PreferredSizeWidget {
   const HeaderMenu({Key? key}) : super(key: key);
@@ -23,7 +24,7 @@ class MyAppBarState extends State<HeaderMenu> {
           showDialog(
             context: context,
             builder: (BuildContext context) {
-              return const HomePage();
+              return const Login();
             },
           );
         }

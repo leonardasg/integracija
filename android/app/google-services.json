@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1066755276777",
+    "project_id": "integracija-2023",
+    "storage_bucket": "integracija-2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066755276777:android:8ed0e5192c9a11f96f9578",
+        "android_client_info": {
+          "package_name": "Robin.Do"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuujEhLXAZ_liwgKxp4cXSP1mD_DiQXj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066755276777:android:2f57505ad3da173a6f9578",
+        "android_client_info": {
+          "package_name": "com.example.integration_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuujEhLXAZ_liwgKxp4cXSP1mD_DiQXj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

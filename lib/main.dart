@@ -6,6 +6,7 @@ import 'package:integration_app/theme/theme_manager.dart';
 import 'package:integration_app/views/home_page.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'models/member.dart';
 
 ThemeManager _themeManager = ThemeManager();
 
@@ -14,6 +15,7 @@ void main() async {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => _themeManager),
+        ChangeNotifierProvider(create: (context) => Member()),
         // other providers
       ],
       child: const MyApp(),
@@ -71,11 +73,11 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    late ConnectivityResult _connectivityResult;
+    late ConnectivityResult connectivityResult;
 
     Future<bool> checkInternetConnection() async {
-      _connectivityResult = await Connectivity().checkConnectivity();
-      if (_connectivityResult == ConnectivityResult.none) {
+      connectivityResult = await Connectivity().checkConnectivity();
+      if (connectivityResult == ConnectivityResult.none) {
         return false;
       }
       return true;
@@ -101,8 +103,8 @@ class _MyAppState extends State<MyApp> {
             } else if (snapshot.hasError || snapshot.data == false) {
               // Display the AlertDialog if there is an error or if the API connection check failed
               return AlertDialog(
-                title: const Text('Nėra interneto ryšio arba neprisijungta prie KTU VPN'),
-                content: const Text('Prisijunkite prie KTU VPN ir bandykite jungtis dar kartą'),
+                title: const Text('Nėra interneto ryšio'),
+                content: const Text('Prisijunkite prie interneto ir bandykite jungtis dar kartą'),
                 actions: [
                   TextButton(
                     child: const Text('Gerai'),
